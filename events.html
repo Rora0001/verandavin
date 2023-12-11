@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
     <div class="logo">
         <a href="index.html">
             <img src="img/logo_blue.png" alt="logo">
@@ -22,6 +23,7 @@
             <li><a href="events.html">Events</a></li>
             <li><a href="merge.html">Merge</a></li>
             <li><a href="press.html">Press</a></li>
+            <li><a href="giftcard.html">Giftcard</a></li>
         </ul>
         <div class="burger">
             <div class="line"></div>
@@ -30,8 +32,32 @@
         </div>
     </nav>
 
+    <script>
+        // Erstat med din egen adgangstoken og bruger-id
+        const accessToken = '2efc73cd5eae8b060caec873f9be9e8f';
+        const userId = '752569683351188';
+        const apiUrl = `https://graph.instagram.com/v12.0/${userId}/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp&access_token=${accessToken}`;
 
-    <script src="script.js"></script>
+        async function fetchInstagramFeed() {
+            try {
+                const response = await fetch(apiUrl);
+                const data = await response.json();
+                const latestThreePosts = data.data.slice(0, 3);
+
+                const instagramFeed = document.getElementById('instagram-feed');
+                latestThreePosts.forEach(post => {
+                    const imgElement = document.createElement('img');
+                    imgElement.src = post.thumbnail_url;
+                    imgElement.alt = post.caption;
+                    instagramFeed.appendChild(imgElement);
+                });
+            } catch (error) {
+                console.error('Fejl ved hentning af Instagram-feed:', error);
+            }
+        }
+
+        window.onload = fetchInstagramFeed;
+    </script>
 </body>
 
 </html>
