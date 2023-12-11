@@ -11,64 +11,22 @@
 
 <body>
 
-    <div class="logo">
-        <a href="index.html">
-            <img src="img/logo_blue.png" alt="logo">
-        </a>
-    </div>
-    <nav>
-        <ul class="menu">
-            <li><a href="index.html">Front page</a></li>
-            <li><a href="about_us.html">About us</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="merge.html">Merge</a></li>
-            <li><a href="press.html">Press</a></li>
-            <li><a href="giftcard.html">Giftcard</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-    </nav>
 
     <h1>Events</h1>
 
-    <p>At Veranda, we continuously strive to curate events that we ourselves would appreciate spending our own time on.
-        Join us every Saturday for a special treat – OYSTER SATURDAYS which is our hopefully forever ongoing event.
+    <p>At Veranda, we continuously strive to curate events that we ourselves would appreciate spending our own time
+        on.
+        Join us every Saturday for a special treat. OYSTER SATURDAYS which is our hopefully forever ongoing event.
     </p>
 
     <div class="grid1">
-        <img src="path/to/first/image.jpg" alt="First Image">
-        <img src="path/to/second/image.jpg" alt="Second Image">
+        <img src="img_events/østers_skilt.webp" alt="First Image">
+        <img src="img_events/østers_skilt.webp" alt="Second Image">
     </div>
 
-    <script>
-        // Erstat med din egen adgangstoken og bruger-id
-        const accessToken = '2efc73cd5eae8b060caec873f9be9e8f';
-        const userId = '752569683351188';
-        const apiUrl = `https://graph.instagram.com/v12.0/${userId}/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp&access_token=${accessToken}`;
 
-        async function fetchInstagramFeed() {
-            try {
-                const response = await fetch(apiUrl);
-                const data = await response.json();
-                const latestThreePosts = data.data.slice(0, 3);
 
-                const instagramFeed = document.getElementById('instagram-feed');
-                latestThreePosts.forEach(post => {
-                    const imgElement = document.createElement('img');
-                    imgElement.src = post.thumbnail_url;
-                    imgElement.alt = post.caption;
-                    instagramFeed.appendChild(imgElement);
-                });
-            } catch (error) {
-                console.error('Fejl ved hentning af Instagram-feed:', error);
-            }
-        }
-
-        window.onload = fetchInstagramFeed;
-    </script>
+    <script src="menu.js"></script>
 </body>
 
 </html>

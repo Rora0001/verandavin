@@ -20,6 +20,11 @@ h1 {
   gap: 20px; /* Just for spacing between images */
 }
 
+.grid1 img {
+  max-width: 100%;
+  height: auto;
+}
+
 .logo img {
   width: 100px; /* Ændr denne værdi efter dine behov */
   height: auto; /* Bevarer billedets proportioner */
