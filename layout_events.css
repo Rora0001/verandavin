@@ -2,6 +2,7 @@ body {
   margin: 1cm;
   border: 2px solid #283274;
   box-sizing: border-box;
+  background-color: #f9f2f2;
 }
 
 @font-face {
@@ -16,18 +17,24 @@ h1 {
 
 .grid1 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 20px; /* Just for spacing between images */
 }
 
-.grid1 img {
-  max-width: 100%;
-  height: auto;
+@media only screen and (min-width: 768px) {
+  /* Ændringer for desktopversionen (juster bredden efter behov) */
+  .grid1 {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* To kolonner ved siden af hinanden */
+  }
 }
 
-.logo img {
-  width: 100px; /* Ændr denne værdi efter dine behov */
-  height: auto; /* Bevarer billedets proportioner */
+.grid1 img {
+  max-width: 80%;
+  height: auto;
+  place-self: center;
 }
 
 .tekst1 {
@@ -163,4 +170,30 @@ nav {
   a:hover {
     text-decoration: underline;
   }
+}
+
+.social-icons a i {
+  color: #283274;
+  font-size: 24px;
+  text-align: center;
+  margin: 3px;
+}
+
+footer {
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap; /* for at få de to div'er til at stå under hinanden */
+}
+
+.social-icons,
+.tekst_footer {
+  margin-top: 20px; /* Tilføj et passende mellemrum mellem de to div-elementer */
+}
+
+.tekst_footer {
+  color: rgb(170, 166, 166);
 }
