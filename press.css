@@ -4,14 +4,11 @@ body, html {
     margin: 0;
   }
 
-  .screen{
-    background-image: url('img_press/veranda_ramme_mobil.svg '); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    overflow: hidden;
+  img{
+    width: 70%;
+    align-items: center;
   }
+
 
 /* COMPUTER VIEW */
 @media (min-width: 800px) {
