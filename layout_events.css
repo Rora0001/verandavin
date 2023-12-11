@@ -5,13 +5,19 @@ body {
 }
 
 @font-face {
-  font-family: "VerandaFont";
-  src: url("fonts/Apoc-BoldItalic.woff") format("woff");
-  src: url("fonts/Apoc-BoldItalic.woff2") format("woff2");
+  font-family: 'VerandaFont';
+  src: url('fonts/Apoc-BoldItalic.woff') format('woff');
+  src: url('fonts/Apoc-BoldItalic.woff2') format('woff2');
 }
 
 h1 {
   font-family: VerandaFont;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; /* Just for spacing between images */
 }
 
 .logo img {
