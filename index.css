@@ -7,7 +7,7 @@ body, html {
   }
 
   .screen{
-    background-image: url('img_press/veranda_blueramme_mobil.svg'); /* Replace 'your-image-url.jpg' with the URL or path to your image */
+    background-image: url('img/veranda_blueramme_mobil.svg'); /* Replace 'your-image-url.jpg' with the URL or path to your image */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -94,7 +94,7 @@ body, html {
       }
     
       .screen{
-        background-image: url(img_press/veranda_ramme_med.svg);
+        background-image: url(img/veranda_ramme_med.svg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -120,7 +120,7 @@ body, html {
       }
     
       .screen{
-        background-image: url(img_press/veranda_blueramme_desktop.svg);
+        background-image: url(img/veranda_blueramme_desktop.svg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
