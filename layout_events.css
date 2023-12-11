@@ -14,60 +14,121 @@ h1 {
   font-family: VerandaFont;
 }
 
-.menu-toggle {
-  display: none;
+.logo img {
+  width: 100px; /* Ændr denne værdi efter dine behov */
+  height: auto; /* Bevarer billedets proportioner */
 }
 
-.burger-menu {
-  font-size: 24px;
-  cursor: pointer;
-  display: none;
-}
+/* menulinje og burgermenu */
 
-.navbar {
-  padding: 10px;
+nav {
+  display: flex;
+  align-items: center;
 }
 
 .menu {
-  list-style: none;
   display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .menu li {
+  flex: auto;
   margin-right: 20px;
 }
 
-.menu a {
-  text-decoration: none;
-  color: rgb(35, 19, 19);
+.menu li:last-child {
+  margin-right: 0;
 }
 
-/* Media query for responsive design */
-@media screen and (max-width: 600px) {
+.menu a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: pink;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+/*Mobilversion*/
+
+@media screen and (max-width: 800px) {
   .menu {
     display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
   }
 
-  .menu-toggle:checked + .burger-menu + .navbar .menu {
-    display: flex;
-  }
-
-  .menu li {
-    margin: 0;
-    text-align: center;
-  }
-
-  .burger-menu {
+  .burger {
+    margin-left: auto;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
     display: block;
   }
-}
 
-.logo img {
-  width: 60xpx; /* Ændr denne værdi efter dine behov */
-  height: auto; /* Bevarer billedets proportioner */
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+    right: auto;
+  }
+
+  nav.active .menu {
+    display: block;
+    position: absolute;
+    top: 89px;
+    width: 56%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    left: 0;
+    background-color: #ffffffab;
+    text-align: left;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 20px;
+  }
+
+  a {
+    font-size: 1rem;
+    text-decoration: underline;
+    font-weight: 10;
+    color: black;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
 }
