@@ -2,15 +2,24 @@ body {
   margin: 1cm;
   border: 2px solid #283274;
   box-sizing: border-box;
+  background-color: #d2dedc;
+}
+
+@font-face {
+  font-family: "VerandaFont";
+  src: url("fonts/Apoc-BoldItalic.woff") format("woff");
+  src: url("fonts/Apoc-BoldItalic.woff2") format("woff2");
 }
 
 h1 {
+  font-family: VerandaFont;
   font-size: 2em;
   margin-bottom: 20px;
   color: #333;
 }
 
 p {
+  font-family: VerandaFont;
   font-size: 1.2em;
   margin-bottom: 30px;
   line-height: 1.6;
@@ -20,63 +29,4 @@ img {
   max-width: 100%;
   height: auto;
   margin-bottom: 20px;
-}
-
-.menu-toggle {
-  display: none;
-}
-
-.burger-menu {
-  font-size: 24px;
-  cursor: pointer;
-  display: none;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-.navbar {
-  padding: 10px;
-  color: #283274;
-}
-
-.menu {
-  list-style: none;
-  display: flex;
-  right: 0;
-}
-
-.menu li {
-  margin-right: 20px;
-}
-
-.menu a {
-  text-decoration: none;
-  color: black;
-}
-
-/* Media query for responsive design */
-@media screen and (max-width: 600px) {
-  .menu {
-    display: none;
-    flex-direction: column;
-    background-color: #333;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-  }
-
-  .menu-toggle:checked + .burger-menu + .navbar .menu {
-    display: flex;
-  }
-
-  .menu li {
-    margin: 0;
-    text-align: center;
-  }
-
-  .burger-menu {
-    display: block;
-  }
 }
