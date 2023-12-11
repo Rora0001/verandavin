@@ -1,0 +1,15 @@
+body {
+  margin: 1cm;
+  border: 2px solid #283274;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "VerandaFont";
+  src: url("fonts/Apoc-BoldItalic.woff") format("woff");
+  src: url("fonts/Apoc-BoldItalic.woff2") format("woff2");
+}
+
+h1 {
+  font-family: VerandaFont;
+}
