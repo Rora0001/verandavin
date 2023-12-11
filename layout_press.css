@@ -1,0 +1,62 @@
+/* MOBILE VIEW */
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .screen{
+    background-image: url('img_press/veranda_ramme_mobil.svg '); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+/* COMPUTER VIEW */
+@media (min-width: 800px) {
+    /* ramme */
+    body, html {
+        height: 100%;
+        margin: 0;
+      }
+    /* udkommenterede rammen fordi den ik passer */
+      /* .screen{
+        background-image: url('img_press/veranda_ramme_desktop.svg'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        overflow: hidden;
+      } */
+
+
+
+.container_1_1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    margin: 30px;
+}
+.img1 {
+    grid-column: 2/2;
+    grid-row: 1/3;
+}
+
+
+.container2_1_1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    margin: 30px;
+}
+.order{
+    order: -1;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+
+}
