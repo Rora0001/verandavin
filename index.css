@@ -1,4 +1,5 @@
 /* MOBILE VIEW */
+/* @media only screen and (max-width: 600px){ */
 body, html {
     height: 100%;
     margin: 0;
@@ -51,7 +52,6 @@ body, html {
     color: white;
 }
 
-/* Media query for responsive design */
 @media screen and (max-width: 600px) {
     .menu {
         display: none;
@@ -84,9 +84,35 @@ body, html {
   top: 22%;
   left: 21%;
 }
+/* } */
+
+/* mellem view */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body, html {
+        height: 100%;
+        margin: 0;
+      }
+    
+      .screen{
+        background-image: url(img_press/veranda_ramme_med.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100vw;
+        height: 100vh; 
+      }
+
+.logo{
+    width: 25%;
+    height: auto;
+    position: absolute;
+    top: 24%;
+    left: 40%;
+}
+}
 
 /* DESKTOP VIEW */
-@media (min-width: 800px) {
+@media only screen and (min-width: 1025px) {
     /* ramme */
     body, html {
         height: 100%;
