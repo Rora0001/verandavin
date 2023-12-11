@@ -87,7 +87,7 @@ nav {
 
   nav.active .menu {
     display: block;
-    background-color: rgba(238, 218, 192);
+    background-color: #e4dddd;
     position: absolute;
     top: 161px;
     right: 65px;
@@ -108,6 +108,7 @@ nav {
 /* SIDEN I MOBILE VIEW */
 body {
   height: 100%;
+  background-color: #f9f2f2;
 }
 
 .border {
