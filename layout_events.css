@@ -30,6 +30,27 @@ h1 {
   height: auto; /* Bevarer billedets proportioner */
 }
 
+.tekst1 {
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.tekst2 {
+  padding-left: 3rem;
+  padding-top: 2rem;
+}
+
+.tekst3 {
+  padding-left: 9rem;
+  padding-top: 2rem;
+}
+
+.tekst4 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 /* menulinje og burgermenu */
 
 nav {
