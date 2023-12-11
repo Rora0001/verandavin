@@ -66,3 +66,8 @@ h1 {
     display: block;
   }
 }
+
+.logo img {
+  width: 60xpx; /* Ændr denne værdi efter dine behov */
+  height: auto; /* Bevarer billedets proportioner */
+}
