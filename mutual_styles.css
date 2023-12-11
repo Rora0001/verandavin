@@ -1,13 +1,18 @@
 @font-face {
-    font-family: "Apoc";
-    src: url("fonts/Apoc_Regular.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: 'Apoc';
+  src: url('fonts/Apoc_Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
-  h1{
-    font-family: "Apoc";
-     text-align: center;
-    /* font-size: ;
+h1 {
+  font-family: 'Apoc';
+  text-align: center;
+  /* font-size: ;
     color: ; */
-  }
+}
+
+.menu {
+  font-family: 'Apoc';
+  font-size: x-large;
+}
