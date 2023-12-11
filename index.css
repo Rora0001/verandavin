@@ -9,6 +9,7 @@ body, html {
   .screen{
     background-image: url('img/veranda_blueramme_mobil.svg'); /* Replace 'your-image-url.jpg' with the URL or path to your image */
     background-size: cover;
+    
     background-repeat: no-repeat;
     background-position: center;
     display: block;
