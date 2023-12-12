@@ -46,3 +46,20 @@ p {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+
+.scrolling-container {
+  height: 200vh; /* Set container height to enable scrolling */
+  position: relative;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.animated-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease; /* Add smooth transition effect */
+}

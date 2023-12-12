@@ -1,16 +1,16 @@
-const burger = document.querySelector('.burger')
-const nav = document.querySelector('nav')
-const menu = document.querySelector('.menu')
-const links = document.querySelectorAll('.menu li a')
+const animatedImages = document.querySelectorAll('.animated-image')
 
-burger.addEventListener('click', () => {
-  burger.classList.toggle('active')
-  nav.classList.toggle('active')
-})
+window.addEventListener('scroll', () => {
+  animatedImages.forEach((image) => {
+    const imageTop = image.getBoundingClientRect().top
+    const windowHeight = window.innerHeight
 
-links.forEach((link) => {
-  link.addEventListener('click', () => {
-    burger.classList.remove('active')
-    nav.classList.remove('active')
+    if (imageTop < windowHeight) {
+      image.style.opacity = 1
+      image.style.transform = 'translateY(0)'
+    } else {
+      image.style.opacity = 0
+      image.style.transform = 'translateY(50px)' // Just an example, adjust as needed
+    }
   })
 })
