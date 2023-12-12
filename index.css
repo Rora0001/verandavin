@@ -1,139 +1,130 @@
 /* MOBILE VIEW */
 /* @media only screen and (max-width: 600px){ */
-body, html {
-    height: 100%;
-    margin: 0;
-   background-color: #D2DEDC;
-  }
-
-  .screen{
-    background-image: url('img/veranda_blueramme_mobil.svg'); /* Replace 'your-image-url.jpg' with the URL or path to your image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: block;
-    height: 100%;
-    height: 100vh; 
-  }
-
-  /* burgermenu */
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+body,
+html {
+  height: 100%;
+  margin: 0;
+  background-color: #d2dedc;
 }
 
-.menu-toggle {
-    display: none;
+.screen {
+  background-image: url('img/veranda_blueramme_mobil.svg'); /* Replace 'your-image-url.jpg' with the URL or path to your image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  height: 100%;
+  height: 100vh;
 }
 
-.burger-menu {
-    font-size: 24px;
-    cursor: pointer;
-    display: none;
+/* BURGER MENU I MOBILEVIEW*/
+header {
+  padding: 20px;
 }
 
-.navbar {
-    background-color: #333;
-    padding: 10px;
+.logo img {
+  width: 7%;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .menu {
-    list-style: none;
-    display: flex;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  position: absolute;
+  left: 61%;
 }
 
-.menu li {
-    margin-right: 20px;
+/* .menu li {
+  margin-right: 20px;
+} */
+
+.menu li:last-child {
+  margin-right: 0;
 }
 
 .menu a {
-    text-decoration: none;
-    color: white;
+  display: flex;
+  padding: 10px;
+  color: #000d3f;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
 }
 
-@media screen and (max-width: 600px) {
-    .menu {
-        display: none;
-        flex-direction: column;
-        background-color: #333;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-    }
+/* .menu a:hover {
+  color: #221a13;
+} */
 
-    .menu-toggle:checked + .burger-menu + .navbar .menu {
-        display: flex;
-    }
-
-    .menu li {
-        margin: 0;
-        text-align: center;
-    }
-
-    .burger-menu {
-        display: block;
-    }
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
 }
 
-.logo{
-  width: 70%;
-  height: auto;
-  position: absolute;
-  top: 22%;
-  left: 21%;
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #000d3f;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
 }
-/* } */
+.burger {
+  display: none;
+}
 
-/* mellem view */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    body, html {
-        height: 100%;
-        margin: 0;
-      }
-    
-      .screen{
-        background-image: url(img/veranda_ramme_med.svg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 100vw;
-        height: 100vh; 
-      }
+/* MENU I MOBILEVIEW */
+@media screen and (max-width: 800px) {
+  .menu,
+  .min_profil {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
 
-.logo{
-    width: 25%;
-    height: auto;
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #e4dddd;
     position: absolute;
-    top: 24%;
-    left: 40%;
-}
-}
+    top: 161px;
+    right: 65px;
+    /* width: 100%; */
+    /* box-shadow: 0 0 10px rgba(123, 23, 23, 0.1); */
+    z-index: 1;
+  }
 
-/* DESKTOP VIEW */
-@media only screen and (min-width: 1025px) {
-    /* ramme */
-    body, html {
-        height: 100%;
-        margin: 0;
-      }
-    
-      .screen{
-        background-image: url(img/veranda_blueramme_desktop.svg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 100vw;
-        height: 100vh;
-        
-      }
-.logo{
-    width: 25%;
-    height: auto;
-    position: absolute;
-    top: 24%;
-    left: 40%;
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 20px;
+  }
+
+  li {
+    width: 100%;
+  }
 }
-      
-    }

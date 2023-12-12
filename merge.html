@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mutual_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <title>Merch</title>
     <style>
         @font-face {
@@ -19,14 +22,6 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-
-        header {
-            background-color: #ffffff;
-            color: rgb(11, 11, 11);
-            text-align: center;
-            padding: 1em;
-            font-family: VerandaFont;
         }
 
         header img {
@@ -123,10 +118,37 @@
 </head>
 
 <body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo_blue.webp" alt="Logo" />
+            </a>
+        </div>
+
+        <ul class="menu">
+            <li><a href="about_us.html">About us</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="giftcard.html">Giftcard</a></li>
+            <li><a href="merge.html">Merch</a></li>
+            <li><a href="press.html">Press</a></li>
+        </ul>
+
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
 
     <header>
         <h1>Merch</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <p>At Veranda, we offer a curated selection of limited-edition merchandise that reflects the style and
+            quality we appreciate. Our merchandise is available in limited quantities, chosen with care to align with
+            our
+            own
+            preferences. It's your chance to take a piece of Veranda home with you.
+            Drop by and explore our collection – you might just find the perfect item that suits your taste and adds a
+            touch of Veranda to your daily life.</p>
     </header>
 
     <section>
@@ -140,6 +162,19 @@
             <img src="/merchphotos/lighters.png" alt="Merchandise 3">
         </div>
     </section>
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/verandavin/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:info@verandavin.dk" class="newsletter-icon"><i class="far fa-envelope"></i></a>
+        </div>
+
+
+        <div class="tekst_footer">
+            All Right Reserved @Veranda Vin Aps - Griffenfeldsgade 17, 2200 København.
+        </div>
+    </footer>
+
+    <script src="menu.js"></script>
 
 </body>
 
