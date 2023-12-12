@@ -4,56 +4,58 @@
   src: url('fonts/Apoc-BoldItalic.woff2') format('woff2');
 }
 
-.grid1 {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px; /* Just for spacing between images */
-}
-
-@media only screen and (min-width: 768px) {
-  /* Ændringer for desktopversionen (juster bredden efter behov) */
-  .grid1 {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* To kolonner ved siden af hinanden */
-  }
-}
-
-.grid1 img {
-  max-width: 80%;
-  height: auto;
-  place-self: center;
-}
-
-.tekst1 {
-  font-family: 'p';
-  text-align: center;
-  padding-bottom: 2rem;
-}
-
-p {
-  padding-left: 3rem;
-  padding-top: 2rem;
-}
-
-p {
-  padding-left: 9rem;
-  padding-top: 2rem;
-}
-
-p {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.grid1 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-}
-
 /* styles.css */
+
+.overlappende_billeder {
+  position: relative;
+}
+
+.overlappende_billeder img {
+  max-width: 50%; /* Sørg for, at billedet ikke overstiger containerens bredde */
+  margin-left: 2rem;
+}
+
+.overlappende_billeder img:first-child {
+  position: relative;
+  z-index: 1; /* Sørger for, at dette billede er øverst */
+}
+
+.overlappende_billeder img:last-child {
+  position: absolute;
+  margin-top: 1px; /* Juster dette for at ændre den vertikale placering */
+  right: 5px; /* Juster dette for at ændre den horisontale placering */
+  z-index: 3; /* Sørger for, at dette billede er mere indenover det første */
+  transform: scale(
+    0.8
+  ); /* Juster dette for at ændre skaleringen af det andet billede */
+  padding-bottom: 47rem;
+  padding-left: 28rem;
+}
+
+.billede {
+  text-align: center;
+}
+
+.billede img {
+  max-width: 50%; /* Juster dette for at ændre størrelsen af det tredje billede */
+}
+
+.instagram {
+  text-align: center;
+}
+
+.instagram img {
+  max-width: 90%; /* Juster dette for at ændre størrelsen af det tredje billede */
+  margin-top: 2rem;
+}
+
+p {
+  margin: 20px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* insta plugin */
 
 .instagram-feed {
   display: flex;

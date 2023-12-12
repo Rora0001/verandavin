@@ -6,6 +6,15 @@ document.addEventListener('DOMContentLoaded', function () {
   fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
+      // Check for expires_in field
+      const expiresIn = data.expires_in
+
+      if (expiresIn) {
+        // Convert expiresIn to milliseconds and set a timeout to refresh the token
+        const expiresInMilliseconds = expiresIn * 1000
+        setTimeout(refreshToken, expiresInMilliseconds)
+      }
+
       const latestPosts = data.data.slice(0, 3)
       const instagramFeed = document.getElementById('instagramFeed')
 
@@ -17,14 +26,11 @@ document.addEventListener('DOMContentLoaded', function () {
     .catch((error) => console.error(error))
 
   function createInstagramPostElement(post) {
-    const postElement = document.createElement('div')
-    postElement.className = 'instagram-post'
+    // ... din eksisterende kode til at oprette HTML-elementer for Instagram-posts
+  }
 
-    const imgElement = document.createElement('img')
-    imgElement.src = post.media_url
-    imgElement.alt = post.caption || 'Instagram Post'
-    postElement.appendChild(imgElement)
-
-    return postElement
+  function refreshToken() {
+    // Implementer logik for at generere en ny adgangstoken her
+    console.log('Refreshing access token...')
   }
 })
