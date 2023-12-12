@@ -57,12 +57,11 @@ html {
   .img_logo {
     width: 30%;
     height: auto;
-  position: absolute;
-  left: 526px;
+    position: absolute;
+    left: 526px;
     top: 173px;
-}
   }
-
+}
 
 /* BURGERMENU */
 /* MENU I DESKTOP*/
@@ -73,7 +72,6 @@ header {
 .logo img {
   width: 37%;
   height: auto;
-  
 }
 
 nav {
