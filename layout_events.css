@@ -27,21 +27,22 @@
 }
 
 .tekst1 {
+  font-family: 'p';
   text-align: center;
   padding-bottom: 2rem;
 }
 
-.tekst2 {
+p {
   padding-left: 3rem;
   padding-top: 2rem;
 }
 
-.tekst3 {
+p {
   padding-left: 9rem;
   padding-top: 2rem;
 }
 
-.tekst4 {
+p {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
