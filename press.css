@@ -123,9 +123,10 @@ body {
   padding: 30px;
 } */
 
-/* .p_press {
-  gjør den italic
-} */
+.p_press {
+  /* gjør den italic */
+  margin: 20px;
+}
 
 .center_img {
   margin: 0 auto;
@@ -154,7 +155,7 @@ img {
   body,
   html {
     height: 100%;
-    margin: 0;
+    /* margin: 0; */
   }
 
   .container_1_1 {
