@@ -1,10 +1,8 @@
 @font-face {
-  font-family: 'VerandaFont';
-  src: url('fonts/Apoc-BoldItalic.woff') format('woff');
-  src: url('fonts/Apoc-BoldItalic.woff2') format('woff2');
+  font-family: "VerandaFont";
+  src: url("fonts/Apoc-BoldItalic.woff") format("woff");
+  src: url("fonts/Apoc-BoldItalic.woff2") format("woff2");
 }
-
-/* styles.css */
 
 .overlappende_billeder {
   position: relative;
@@ -25,9 +23,7 @@
   /* Juster dette for at ændre den vertikale placering */
   right: 5px; /* Juster dette for at ændre den horisontale placering */
   z-index: 3; /* Sørger for, at dette billede er mere indenover det første */
-  transform: scale(
-    0.8
-  ); /* Juster dette for at ændre skaleringen af det andet billede */
+  transform: scale(0.8); /* Juster dette for at ændre skaleringen af det andet billede */
   padding-bottom: 80rem;
   padding-left: 20rem;
 }
@@ -38,7 +34,7 @@
 }
 
 .billede img {
-  max-width: 70%; /* Juster dette for at ændre størrelsen af det tredje billede */
+  max-width: 60%; /* Juster dette for at ændre størrelsen af det tredje billede */
 }
 
 .instagram {
@@ -52,14 +48,20 @@
 .tekst1 {
   text-align: center;
   padding-bottom: 2rem;
-  font-family: 'p';
+  font-family: "p";
 }
 
 .tekst2 {
   margin: 20px;
   padding-top: 7rem;
-  font-family: 'p';
+  font-family: "p";
   padding-bottom: 1rem;
+}
+
+.tekst3 {
+  margin: 20px;
+  padding-top: 1rem;
+  font-family: "p";
 }
 
 p {
@@ -133,4 +135,59 @@ p {
 
 .pop-animation {
   animation: fadeIn 0.5s ease-in-out; /* Brug fadeIn-animationen for at få billedet til at fade ind */
+}
+
+/* SIDEN I COMPUTER VIEW */
+@media (min-width: 800px) {
+  .overlappende_billeder img {
+    max-width: 45%;
+    margin: 0 0 30px 30px; /* Lige stor margin på toppen, bunden, højre og venstre */
+  }
+
+  .overlappende_billeder img:first-child {
+    position: relative;
+    z-index: 1; /* Sørger for, at dette billede er øverst */
+  }
+
+  .overlappende_billeder img:last-child {
+    position: absolute;
+    right: 40px;
+    z-index: 3;
+    transform: scale(0.9);
+    padding-bottom: 400rem;
+    padding-left: 460rem;
+  }
+
+  .tekst2 {
+    font-family: "p";
+    z-index: 3;
+    position: absolute;
+    top: 460px; /* Juster dette for at ændre afstanden fra toppen */
+    left: 552px; /* Juster dette for at ændre den vandrette placering */
+    padding-right: 10rem;
+    padding-left: 15rem;
+  }
+
+  .billede {
+    position: relative;
+    margin-left: 2rem;
+  }
+
+  .billede img {
+    max-width: 40%;
+    margin: auto 30px 30px auto; /* Lige stor margin på toppen, bunden, højre og venstre */
+    display: block;
+    padding-top: 300px;
+  }
+
+  .tekst3 {
+    margin: 19px;
+    padding-top: 72rem;
+    position: absolute;
+    z-index: 3;
+    top: 462px;
+    left: 32px;
+    padding-right: 15rem;
+    padding-left: 3rem;
+  }
 }
