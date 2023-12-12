@@ -11,7 +11,9 @@ body {
   box-sizing: border-box;
   background-color: #f9f2f2;
 }
-
+header {
+  background-color:#f9f2f2;
+}
 /*fonte*/
 h1 {
   font-family: 'Apoc';
