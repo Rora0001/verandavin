@@ -11,7 +11,7 @@
 }
 
 .overlappende_billeder img {
-  max-width: 50%; /* Sørg for, at billedet ikke overstiger containerens bredde */
+  max-width: 60%; /* Sørg for, at billedet ikke overstiger containerens bredde */
   margin-left: 2rem;
 }
 
@@ -22,14 +22,14 @@
 
 .overlappende_billeder img:last-child {
   position: absolute;
-  margin-top: 1px; /* Juster dette for at ændre den vertikale placering */
+  /* Juster dette for at ændre den vertikale placering */
   right: 5px; /* Juster dette for at ændre den horisontale placering */
   z-index: 3; /* Sørger for, at dette billede er mere indenover det første */
   transform: scale(
     0.8
   ); /* Juster dette for at ændre skaleringen af det andet billede */
-  padding-bottom: 47rem;
-  padding-left: 28rem;
+  padding-bottom: 80rem;
+  padding-left: 20rem;
 }
 
 .billede {
@@ -46,13 +46,24 @@
 
 .instagram img {
   max-width: 90%; /* Juster dette for at ændre størrelsen af det tredje billede */
-  margin-top: 2rem;
+}
+
+.tekst1 {
+  text-align: center;
+  padding-bottom: 2rem;
+  font-family: 'p';
+}
+
+.tekst2 {
+  margin: 20px;
+  padding-top: 7rem;
+  font-family: 'p';
+  padding-bottom: 1rem;
 }
 
 p {
   margin: 20px;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
 }
 
 /* insta plugin */
