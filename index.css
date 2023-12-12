@@ -50,7 +50,7 @@ html {
 /* BURGERMENU */
 /* MENU I DESKTOP*/
 header {
-  padding: 20px;
+  padding-top: 150px;
 }
 
 .logo img {
@@ -89,6 +89,9 @@ nav {
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
+  font-size: 25px;
+  font-weight: 20rem;
+  font-family: 'apoc';
 }
 
 /* .menu a:hover {
@@ -99,6 +102,8 @@ nav {
   width: 30px;
   height: 20px;
   cursor: pointer;
+  margin-top: -3rem;
+  padding-left: 20rem;
 }
 
 .burger .line {
@@ -140,8 +145,8 @@ nav {
     display: block;
     background-color: #e4dddd;
     position: absolute;
-    top: 161px;
-    right: 65px;
+    top: 140px;
+    right: 55px;
     /* width: 100%; */
     /* box-shadow: 0 0 10px rgba(123, 23, 23, 0.1); */
     z-index: 1;
@@ -165,7 +170,7 @@ nav {
   font-size: 30px;
   text-align: center;
   margin: 3px;
-  padding-top: 35rem;
+  padding-top: 25rem;
 }
 
 footer {
