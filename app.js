@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   const accessToken =
-    'IGQWRPZAlVuX1Njd1h0dUZAFdzBOX1hVUkdfYUgyRzd3cFp4bUtNTmRxMHVraS1IRDRmMWx4ZAWpwc2VoMk5OZA2s0VTlmVlVfV3ZAhcDUyVEFFbXdwcGREdXRRcG1Cd3dYYmZA3RGsyRFR1clFoMmxGdTJLelo0UFZAhbW8ZD'
+    'IGQWROaXRLTFp2RkRhdmFGNl80U1FkanlNMnRibjZADS19ld3hVQk1adlpsS0E0WUFib1NkcXB3eDd5V3pIUkg0RlBOU1A3OW5QckU5dDhQOHU0NWRwSTZAQdFNNSW5fUVVQMjBNWHJXU0hGQXp1Y0Q5SnVMS2drUncZD'
   const apiUrl = `https://graph.instagram.com/v13.0/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp&access_token=${accessToken}`
 
   fetch(apiUrl)
