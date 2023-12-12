@@ -62,9 +62,6 @@ nav {
   display: none;
 }
 
-br {
-  display: none;
-}
 
 /* MENU I MOBILEVIEW */
 @media screen and (max-width: 800px) {
