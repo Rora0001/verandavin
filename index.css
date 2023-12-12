@@ -35,8 +35,8 @@ html {
   width: 60%;
   height: auto;
   position: absolute;
-  left: 526px;
-    top: 173px;
+  left: 126px;
+  top: 232px;
 }
 
 /* DESKTOP VIEW */
@@ -57,7 +57,10 @@ html {
   .img_logo {
     width: 30%;
     height: auto;
-  
+  position: absolute;
+  left: 526px;
+    top: 173px;
+}
   }
 }
 
