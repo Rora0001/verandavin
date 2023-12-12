@@ -18,10 +18,10 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            margin: 1cm;
+            border: 2px solid #283274;
             box-sizing: border-box;
+            background-color: #f9f2f2;
         }
 
         header img {
@@ -41,39 +41,43 @@
             /* 3 items per row with some margin */
             margin: 10px;
             cursor: auto;
+
+            transition: transform 2s ease;
         }
 
         /* Define the default image style */
         .merch-item1 img {
             width: 100%;
             height: 100%;
-            transition: transform 0.3s ease;
+            transition: transform 2s ease;
         }
 
         .merch-item2 {
             flex: 0 0 calc(33.33% - 20px);
             /* 3 items per row with some margin */
             margin: 10px;
+            transition: transform 2s ease;
         }
 
         /* Define the default image style */
         .merch-item2 img {
             width: 100%;
             height: 100%;
-            transition: transform 0.3s ease;
+            transition: transform 2s ease;
         }
 
         .merch-item3 {
             flex: 0 0 calc(33.33% - 20px);
             /* 3 items per row with some margin */
             margin: 10px;
+            transition: transform 2s ease;
         }
 
         /* Define the default image style */
         .merch-item3 img {
             width: 100%;
             height: 100%;
-            transition: transform 0.3s ease;
+            transition: transform 2s ease;
         }
 
 
@@ -82,7 +86,6 @@
             transform: scale(1.2);
             /* You can adjust the scale factor */
             content: url('/merchphotos/merch1.png');
-            /* Set the hover image for Merchandise 1 */
         }
 
         .merch-item2:hover img {
