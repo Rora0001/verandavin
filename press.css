@@ -124,7 +124,11 @@ body {
 } */
 
 .p_press {
-  /* gjør den italic */
+  font-style: italic;
+  margin: 20px;
+}
+
+p {
   margin: 20px;
 }
 
