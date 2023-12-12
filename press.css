@@ -20,9 +20,8 @@ nav {
   margin: 0;
   padding: 0;
   justify-content: space-between;
-  width: 825px;
   position: absolute;
-  left: 22%;
+  left: 61%;
 }
 
 /* .menu li {
@@ -161,15 +160,6 @@ img {
     height: 100%;
     margin: 0;
   }
-  /* udkommenterede rammen fordi den ik passer */
-  /* .screen{
-        background-image: url('img_press/veranda_ramme_desktop.svg'); 
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 100vh;
-        overflow: hidden;
-      } */
 
   .container_1_1 {
     display: grid;
