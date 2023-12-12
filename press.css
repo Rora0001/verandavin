@@ -62,8 +62,10 @@ nav {
   display: none;
 }
 
+
 /* MENU I MOBILEVIEW */
 @media screen and (max-width: 800px) {
+
   .menu,
   .min_profil {
     display: none;
@@ -152,8 +154,14 @@ img {
   margin-top: 50px;
 }
 
+
+
+
+
+
 /* SIDEN I COMPUTER VIEW */
 @media (min-width: 800px) {
+  /* CONTAINER 1 */
   .container_1_1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -165,14 +173,19 @@ img {
     grid-column: 2 / span 1; /* Set image to start in the second column and span 1 column */
   }
 
-  .sammen1 {
-    grid-column: 1 / span 1; /* Set sammen1 to start in the first column and span 1 column */
+  .sammen2{
+    text-align: right;
   }
 
-  .sammen2 {
-    grid-column: 1 / span 1; /* Set sammen2 to start in the first column and span 1 column */
+  .tekst_cont_1{
+    grid-column: 1 / span 1; /* Set tekst_cont_2 to start in the second column and span 1 column */
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr; /* Adjust the number of rows based on your content */
+       gap: 18%;
+    margin: 10% 0;
   }
 
+  /* CONTAINER 2 */
   .container2_1_1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -188,6 +201,12 @@ img {
     grid-column: 2 / span 1; /* Set tekst_cont_2 to start in the second column and span 1 column */
     display: grid;
     grid-template-rows: 1fr 1fr 1fr; /* Adjust the number of rows based on your content */
-    gap: 20px;
+    gap: 30%;
+    margin: 10% 0;
+    
+  }
+
+  .sammen4{
+    text-align: right;
   }
 }

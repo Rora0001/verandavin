@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "Apoc";
+  src: url("fonts/Apoc_Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "p";
+  src: url(/fonts/Apoc_Regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* MOBILE VIEW */
 
 body,
@@ -8,7 +21,7 @@ html {
 }
 
 .screen {
-  background-image: url('img/veranda_blueramme_mobil.svg');
+  background-image: url("img/veranda_blueramme_mobil.svg");
   background-size: cover;
   background-repeat: no-repeat;
   top: 0;
@@ -44,8 +57,12 @@ html {
   .img_logo {
     width: 30%;
     height: auto;
-  }
+  position: absolute;
+  left: 526px;
+    top: 173px;
 }
+  }
+
 
 /* BURGERMENU */
 /* MENU I DESKTOP*/
@@ -56,6 +73,7 @@ header {
 .logo img {
   width: 37%;
   height: auto;
+  
 }
 
 nav {
@@ -71,7 +89,8 @@ nav {
   padding: 0;
   justify-content: space-between;
   position: absolute;
-  left: 61%;
+  left: 35%;
+  background-color: #f8d2ca;
 }
 
 /* .menu li {
@@ -91,7 +110,7 @@ nav {
   text-align: end;
   font-size: 25px;
   font-weight: 20rem;
-  font-family: 'apoc';
+  font-family: "apoc";
 }
 
 /* .menu a:hover {
@@ -167,7 +186,7 @@ nav {
 
 .social-icons a i {
   color: #283274;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   margin: 3px;
   padding-top: 25rem;
