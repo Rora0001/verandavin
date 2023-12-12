@@ -159,3 +159,19 @@ nav {
     width: 100%;
   }
 }
+
+.social-icons a i {
+  color: #283274;
+  font-size: 30px;
+  text-align: center;
+  margin: 3px;
+  padding-top: 35rem;
+}
+
+footer {
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  justify-content: center;
+}
