@@ -5,20 +5,52 @@
   font-style: normal;
 }
 
+body {
+  margin: 1cm;
+  border: 2px solid #283274;
+  box-sizing: border-box;
+  background-color: #f9f2f2;
+}
+
+/*fonte*/
 h1 {
   font-family: 'Apoc';
   text-align: center;
-  /* font-size: ;
-    color: ; */
+  font-size: 35px;
+  color: #000d3f;
 }
 
 .menu {
   font-family: 'Apoc';
   font-size: x-large;
+  color: #000d3f;
+}
+
+/*footer*/
+.social-icons a i {
+  color: #283274;
+  font-size: 24px;
+  text-align: center;
+  margin: 3px;
 }
 
 footer {
-  margin-top: 80px;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap; /* for at få de to div'er til at stå under hinanden */
+}
+
+.social-icons,
+.tekst_footer {
+  margin-top: 20px; /* Tilføj et passende mellemrum mellem de to div-elementer */
+}
+
+.tekst_footer {
+  color: rgb(170, 166, 166);
 }
 
 /* BURGER MENU I MOBILEVIEW*/
