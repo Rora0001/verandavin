@@ -1,5 +1,5 @@
 /* MOBILE VIEW */
-/* @media only screen and (max-width: 600px){ */
+
 body,
 html {
   height: 100%;
@@ -8,22 +8,32 @@ html {
 }
 
 .screen {
-  background-image: url('img/veranda_blueramme_mobil.svg'); /* Replace 'your-image-url.jpg' with the URL or path to your image */
+  background-image: url('img/veranda_blueramme_mobil.svg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  top: 0;
+  left: 0;
   display: block;
   height: 100%;
   height: 100vh;
 }
 
-/* BURGER MENU I MOBILEVIEW*/
+.img_logo {
+  width: 60%;
+  height: auto;
+  position: absolute;
+  left: 126px;
+  top: 232px;
+}
+
+/* BURGERMENU */
+/* MENU I DESKTOP*/
 header {
   padding: 20px;
 }
 
 .logo img {
-  width: 7%;
+  width: 37%;
   height: auto;
 }
 
@@ -81,7 +91,7 @@ nav {
   display: none;
 }
 
-/* MENU I MOBILEVIEW */
+/* BURGERMENU I MOBILEVIEW */
 @media screen and (max-width: 800px) {
   .menu,
   .min_profil {
