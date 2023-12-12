@@ -35,8 +35,8 @@ html {
   width: 60%;
   height: auto;
   position: absolute;
-  left: 126px;
-  top: 232px;
+  left: 526px;
+    top: 173px;
 }
 
 /* DESKTOP VIEW */
@@ -57,6 +57,7 @@ html {
   .img_logo {
     width: 30%;
     height: auto;
+  
   }
 }
 
@@ -69,6 +70,7 @@ header {
 .logo img {
   width: 37%;
   height: auto;
+  
 }
 
 nav {
