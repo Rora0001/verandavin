@@ -26,6 +26,27 @@ html {
   top: 232px;
 }
 
+/* DESKTOP VIEW */
+@media only screen and (min-width: 800px) {
+  /* Your desktop styles go here */
+  .screen {
+    background-image: url(img/veranda_blueramme_desktop.svg);
+    background-size: cover;
+    top: 0;
+    left: 0;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .img_logo {
+    width: 30%;
+    height: auto;
+  }
+}
+
 /* BURGERMENU */
 /* MENU I DESKTOP*/
 header {
