@@ -4,6 +4,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'p';
+  src: url(/fonts/Apoc_Regular.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   margin: 1cm;
@@ -27,6 +33,10 @@ h1 {
   font-family: 'Apoc';
   font-size: x-large;
   color: #000d3f;
+}
+
+p {
+  font-family: 'p';
 }
 
 /*footer*/
