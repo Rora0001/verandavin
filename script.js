@@ -5,7 +5,7 @@ window.addEventListener('scroll', () => {
     const imageTop = image.getBoundingClientRect().top
     const windowHeight = window.innerHeight
 
-    if (imageTop < windowHeight) {
+    if (imageTop < windowHeight * 0.75) {
       image.style.opacity = 1
       image.style.transform = 'translateY(0)'
     } else {
