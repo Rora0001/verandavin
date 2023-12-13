@@ -35,7 +35,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Dette sikrer, at containeren er mindst 100% af visningens højde */
+  height: 56vh; /* Dette sikrer, at containeren er mindst 100% af visningens højde */
 }
 
 .img_logo1,
@@ -193,7 +193,7 @@ nav {
   font-size: 20px;
   text-align: center;
   margin: 3px;
-  padding-top: 25rem;
+  padding-top: 10px;
 }
 
 footer {
