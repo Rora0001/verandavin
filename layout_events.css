@@ -174,15 +174,28 @@
     padding-bottom: 1rem;
   }
 
-  .billede_grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+  .billede_container {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .billede_grid {
+    display: flex;
+    gap: 2rem;
+    max-width: 80%;
+    align-items: center;
+  }
+
+  .billede_grid div {
+    flex: 1;
   }
 
   .billede_grid img {
-    max-width: 80%;
+    max-width: 100%;
+    height: auto;
   }
   .tekst4 {
     font-size: larger;
