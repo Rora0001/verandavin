@@ -172,6 +172,7 @@
   .tekst3 {
     text-align: center;
     font-size: larger;
+    padding-bottom: 1rem;
   }
 
   .billede_grid {
@@ -187,5 +188,6 @@
   .tekst4 {
     font-size: larger;
     text-align: center;
+    padding-bottom: 1rem;
   }
 }
