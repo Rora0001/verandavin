@@ -117,13 +117,6 @@ body {
   background-color: #f9f2f2;
 }
 
-/* .border {
-  margin: 1cm;
-  border: 2px solid #000d3f;
-  box-sizing: border-box;
-  padding: 30px;
-} */
-
 .p_press {
   font-style: italic;
   margin: 20px;
@@ -154,6 +147,48 @@ img {
   margin-top: 50px;
 }
 
+/* fade in and out img */
+#popImage3,
+#popImage4 {
+  opacity: 0; /* Billede starter usynligt */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.pop-animation {
+  animation: fadeIn 0.5s ease-in-out; /* Brug fadeIn-animationen for at få billedet til at fade ind */
+}
+
+/* Links */
+/* Remove underline and set color for regular link */
+.link {
+  text-decoration: none; /* Removes underline */
+  color: #000691; /* Set your desired text color */
+}
+
+/* Set color for visited link */
+.link:visited {
+  color: #000691; /* Set your desired visited link color */
+}
+
+/* Set color for link on hover */
+.link:hover {
+  color: #000691; /* Set your desired hover color */
+}
+
+/* Set color for active/focused link */
+.link:active,
+.link:focus {
+  color: #000691; /* Set your desired active/focused link color */
+}
 
 
 

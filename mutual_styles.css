@@ -40,6 +40,8 @@ p {
   font-family: "p";
 }
 
+
+
 /*footer*/
 .social-icons a i {
   color: #283274;
@@ -60,11 +62,16 @@ footer {
 
 .social-icons,
 .tekst_footer {
-  margin-top: 20px; /* Tilføj et passende mellemrum mellem de to div-elementer */
+  margin-top: 10px; /* Tilføj et passende mellemrum mellem de to div-elementer */
 }
 
 .tekst_footer {
   color: rgb(170, 166, 166);
+  font-size: 15px;
+}
+
+.tekst_footer2 a {
+  color: rgb(122, 116, 116);
 }
 
 /* BURGER MENU I MOBILEVIEW*/
