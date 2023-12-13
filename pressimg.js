@@ -1,33 +1,33 @@
 
-// EVENTS
-const popImage = document.getElementById('popImage')
+// PRESS
+const popImage3 = document.getElementById('popImage3')
 
 function handleScroll() {
   const scrollPosition = window.scrollY
-  const imagePosition = popImage.offsetTop
+  const imagePosition = popImage3.offsetTop
 
   if (scrollPosition > imagePosition - window.innerHeight / 2) {
-    popImage.style.opacity = 1
-    popImage.classList.add('pop-animation')
+    popImage3.style.opacity = 1
+    popImage3.classList.add('pop-animation')
   }
 }
 
 window.addEventListener('scroll', handleScroll)
 
-const popImage2 = document.getElementById('popImage2')
+const popImage4 = document.getElementById('popImage4')
 
 function handleScroll2() {
   const scrollPosition = window.scrollY
-  const imagePosition = popImage2.offsetTop
+  const imagePosition = popImage4.offsetTop
 
   // Tidsforsinkelse på 500 ms (0.5 sekunder)
-  const delay = 1000
+  const delay = 10
 
   if (scrollPosition > imagePosition - window.innerHeight / 2) {
     // Brug setTimeout til at forsinke visningen af det andet billede
     setTimeout(() => {
-      popImage2.style.opacity = 1
-      popImage2.classList.add('pop-animation')
+      popImage4.style.opacity = 1
+      popImage4.classList.add('pop-animation')
     }, delay)
   }
 }

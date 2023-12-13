@@ -169,24 +169,24 @@ img {
 
 /* Links */
 /* Remove underline and set color for regular link */
-a {
+.link {
   text-decoration: none; /* Removes underline */
   color: #000691; /* Set your desired text color */
 }
 
 /* Set color for visited link */
-a:visited {
+.link:visited {
   color: #000691; /* Set your desired visited link color */
 }
 
 /* Set color for link on hover */
-a:hover {
+.link:hover {
   color: #000691; /* Set your desired hover color */
 }
 
 /* Set color for active/focused link */
-a:active,
-a:focus {
+.link:active,
+.link:focus {
   color: #000691; /* Set your desired active/focused link color */
 }
 
