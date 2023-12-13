@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'Apoc';
-  src: url('fonts/Apoc_Regular.woff2') format('woff2');
+  font-family: "Apoc";
+  src: url("fonts/Apoc_Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'p';
-  src: url(/fonts/Apoc_Regular.woff2) format('woff2');
+  font-family: "p";
+  src: url(/fonts/Apoc_Regular.woff2) format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -23,7 +23,7 @@ header {
 }
 /*fonte*/
 h1 {
-  font-family: 'Apoc';
+  font-family: "Apoc";
   text-align: center;
   font-size: 35px;
   color: #000d3f;
@@ -31,13 +31,13 @@ h1 {
 }
 
 .menu {
-  font-family: 'Apoc';
+  font-family: "Apoc";
   font-size: x-large;
   color: #000d3f;
 }
 
 p {
-  font-family: 'p';
+  font-family: "p";
 }
 
 /*footer*/
@@ -65,6 +65,10 @@ footer {
 
 .tekst_footer {
   color: rgb(170, 166, 166);
+}
+
+.tekst_footer2 a {
+  color: rgb(122, 116, 116);
 }
 
 /* BURGER MENU I MOBILEVIEW*/
