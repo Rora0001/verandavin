@@ -29,7 +29,6 @@
 }
 
 .billede_grid {
-  position: relative;
   margin-left: 2rem;
 }
 
@@ -59,7 +58,7 @@
 
 .tekst3 {
   margin: 20px;
-  padding-top: 1rem;
+  padding-top: 15rem;
   font-family: "p";
 }
 
@@ -163,20 +162,30 @@
 
   .tekst2 {
     font-family: "p";
-    z-index: 3;
     position: absolute;
     top: 460px; /* Juster dette for at ændre afstanden fra toppen */
-    left: 552px; /* Juster dette for at ændre den vandrette placering */
-    padding-right: 10rem;
-    padding-left: 15rem;
-    font-size: 20px;
+    left: 650px; /* Juster dette for at ændre den vandrette placering */
+    font-size: 17px;
+    right: 100px;
+  }
+
+  .tekst3 {
+    text-align: center;
+    font-size: larger;
   }
 
   .billede_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .billede_grid img {
+    max-width: 80%;
   }
   .tekst4 {
     font-size: larger;
+    text-align: center;
   }
 }
