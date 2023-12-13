@@ -60,11 +60,12 @@ footer {
 
 .social-icons,
 .tekst_footer {
-  margin-top: 20px; /* Tilføj et passende mellemrum mellem de to div-elementer */
+  margin-top: 10px; /* Tilføj et passende mellemrum mellem de to div-elementer */
 }
 
 .tekst_footer {
   color: rgb(170, 166, 166);
+  font-size: 15px;
 }
 
 .tekst_footer2 a {
