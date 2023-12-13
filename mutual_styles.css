@@ -25,7 +25,7 @@ header {
 h1 {
   font-family: "Apoc";
   text-align: center;
-  font-size: 35px;
+  font-size: 45px;
   color: #000d3f;
   padding-bottom: 2rem;
 }
@@ -40,8 +40,6 @@ p {
   font-family: "p";
 }
 
-
-
 /*footer*/
 .social-icons a i {
   color: #283274;
@@ -52,12 +50,7 @@ p {
 
 footer {
   padding: 2rem 4rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
-  justify-content: center;
   text-align: center;
-  flex-wrap: wrap; /* for at få de to div'er til at stå under hinanden */
 }
 
 .social-icons,

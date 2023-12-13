@@ -28,15 +28,13 @@
   padding-left: 20rem;
 }
 
-.billede {
-  position: relative;
+.billede_grid {
   margin-left: 2rem;
 }
 
-.billede img {
-  max-width: 60%; /* Juster dette for at ændre størrelsen af det tredje billede */
+.billede_grid img {
+  max-width: 60%;
 }
-
 .instagram {
   text-align: center;
 }
@@ -60,13 +58,14 @@
 
 .tekst3 {
   margin: 20px;
-  padding-top: 1rem;
+  padding-top: 15rem;
   font-family: "p";
 }
 
-p {
+.tekst4 {
   margin: 20px;
   padding-top: 1rem;
+  font-family: "p";
 }
 
 /* insta plugin */
@@ -120,8 +119,7 @@ p {
 
 #popImage,
 #popImage2 {
-  opacity: 0; /* Billede starter usynligt */
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -157,36 +155,51 @@ p {
     transform: scale(0.9);
   }
 
+  .tekst1 {
+    font-size: larger;
+  }
+
   .tekst2 {
     font-family: "p";
-    z-index: 3;
     position: absolute;
     top: 460px; /* Juster dette for at ændre afstanden fra toppen */
-    left: 552px; /* Juster dette for at ændre den vandrette placering */
-    padding-right: 10rem;
-    padding-left: 15rem;
-  }
-
-  .billede {
-    position: relative;
-    margin-left: 2rem;
-  }
-
-  .billede img {
-    max-width: 40%;
-    margin: auto 30px 30px auto; /* Lige stor margin på toppen, bunden, højre og venstre */
-    display: block;
-    padding-top: 300px;
+    left: 650px; /* Juster dette for at ændre den vandrette placering */
+    font-size: 17px;
+    right: 100px;
   }
 
   .tekst3 {
-    margin: 19px;
-    padding-top: 72rem;
-    position: absolute;
-    z-index: 3;
-    top: 462px;
-    left: 32px;
-    padding-right: 45rem;
-    padding-left: 3rem;
+    text-align: center;
+    font-size: larger;
+    padding-bottom: 1rem;
+  }
+
+  .billede_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .billede_grid {
+    display: flex;
+    gap: 2rem;
+    max-width: 80%;
+    align-items: center;
+  }
+
+  .billede_grid div {
+    flex: 1;
+  }
+
+  .billede_grid img {
+    max-width: 100%;
+    height: auto;
+  }
+  .tekst4 {
+    font-size: larger;
+    text-align: center;
+    padding-bottom: 1rem;
   }
 }
