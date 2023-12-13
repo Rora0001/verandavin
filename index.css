@@ -31,12 +31,18 @@ html {
   height: 100vh;
 }
 
-.img_logo {
-  width: 60%;
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Dette sikrer, at containeren er mindst 100% af visningens højde */
+}
+
+.img_logo1,
+.img_logo2 {
+  width: 30%;
   height: auto;
-  position: absolute;
-  left: 126px;
-  top: 232px;
+  margin: 0 10px; /* Lidt mellemrum mellem logoerne */
 }
 
 /* DESKTOP VIEW */
