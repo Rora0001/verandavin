@@ -151,11 +151,10 @@ p {
 
   .overlappende_billeder img:last-child {
     position: absolute;
-    right: 40px;
+    right: 243px; /* Juster dette for at ændre afstanden fra højre */
+    top: 213px; /* Juster dette for at ændre afstanden fra toppen */
     z-index: 3;
     transform: scale(0.9);
-    padding-bottom: 400rem;
-    padding-left: 460rem;
   }
 
   .tekst2 {
