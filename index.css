@@ -241,6 +241,17 @@ nav {
   li {
     width: 100%;
   }
+
+  .img_logo {
+    width: 172px;
+  }
+
+  .img_maane {
+    position: absolute;
+    left: 14%;
+    height: 221px;
+    top: -20px;
+  }
 }
 
 .social-icons a i {
