@@ -112,14 +112,14 @@ main {
 }
 
 .img_logo {
-  width: 200px;
+  width: 250px;
 }
 
 .img_maane {
   position: absolute;
-  left: 38%;
-  height: 222px;
-  top: -9px;
+  left: 35%;
+  height: 300px;
+  top: -20px;
 }
 
 /* BURGERMENU */
@@ -246,7 +246,7 @@ nav {
   font-size: 20px;
   text-align: center;
   margin: 3px;
-  padding-top: 10px;
+  padding-top: 105px;
 }
 
 footer {
