@@ -24,10 +24,6 @@ nav {
   left: 61%;
 }
 
-/* .menu li {
-  margin-right: 20px;
-} */
-
 .menu li:last-child {
   margin-right: 0;
 }
@@ -40,10 +36,6 @@ nav {
   transition: color 0.3s;
   text-align: end;
 }
-
-/* .menu a:hover {
-  color: #221a13;
-} */
 
 .burger {
   width: 30px;
@@ -94,8 +86,6 @@ nav {
     position: absolute;
     top: 161px;
     right: 65px;
-    /* width: 100%; */
-    /* box-shadow: 0 0 10px rgba(123, 23, 23, 0.1); */
     z-index: 1;
   }
 
@@ -150,7 +140,7 @@ img {
 /* fade in and out img */
 #popImage3,
 #popImage4 {
-  opacity: 0; /* Billede starter usynligt */
+  opacity: 0; /* gør at billede starter usynligt */
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
@@ -164,30 +154,28 @@ img {
 }
 
 .pop-animation {
-  animation: fadeIn 0.5s ease-in-out; /* Brug fadeIn-animationen for at få billedet til at fade ind */
+  animation: fadeIn 0.5s ease-in-out; 
 }
 
-/* Links */
-/* Remove underline and set color for regular link */
+
 .link {
-  text-decoration: none; /* Removes underline */
-  color: #000691; /* Set your desired text color */
+  text-decoration: none; /* fjerner underline */
+  color: #000691; 
 }
 
-/* Set color for visited link */
 .link:visited {
-  color: #000691; /* Set your desired visited link color */
+  color: #000691; 
 }
 
-/* Set color for link on hover */
+
 .link:hover {
-  color: #000691; /* Set your desired hover color */
+  color: #000691; 
 }
 
-/* Set color for active/focused link */
+
 .link:active,
 .link:focus {
-  color: #000691; /* Set your desired active/focused link color */
+  color: #000691; 
 }
 
 
@@ -205,7 +193,7 @@ img {
   }
 
   .img1 {
-    grid-column: 2 / span 1; /* Set image to start in the second column and span 1 column */
+    grid-column: 2 / span 1; 
   }
 
   .sammen2{
@@ -213,9 +201,9 @@ img {
   }
 
   .tekst_cont_1{
-    grid-column: 1 / span 1; /* Set tekst_cont_2 to start in the second column and span 1 column */
+    grid-column: 1 / span 1; 
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr; /* Adjust the number of rows based on your content */
+    grid-template-rows: 1fr 1fr 1fr; 
        gap: 18%;
     margin: 10% 0;
   }
@@ -229,13 +217,13 @@ img {
   }
 
   .order {
-    grid-column: 1 / span 1; /* Set image to start in the first column and span 1 column */
+    grid-column: 1 / span 1; 
   }
 
   .tekst_cont_2 {
-    grid-column: 2 / span 1; /* Set tekst_cont_2 to start in the second column and span 1 column */
+    grid-column: 2 / span 1; 
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr; /* Adjust the number of rows based on your content */
+    grid-template-rows: 1fr 1fr 1fr; 
     gap: 30%;
     margin: 10% 0;
     

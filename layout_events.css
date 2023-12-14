@@ -9,21 +9,20 @@
 }
 
 .overlappende_billeder img {
-  max-width: 60%; /* Sørg for, at billedet ikke overstiger containerens bredde */
+  max-width: 60%;
   margin-left: 2rem;
 }
 
 .overlappende_billeder img:first-child {
   position: relative;
-  z-index: 1; /* Sørger for, at dette billede er øverst */
+  z-index: 1; /* gør at dette billede er øverst */
 }
 
 .overlappende_billeder img:last-child {
   position: absolute;
-  /* Juster dette for at ændre den vertikale placering */
-  right: 5px; /* Juster dette for at ændre den horisontale placering */
-  z-index: 3; /* Sørger for, at dette billede er mere indenover det første */
-  transform: scale(0.8); /* Juster dette for at ændre skaleringen af det andet billede */
+  right: 5px;
+  z-index: 3; /* Sørger for at billedet er øverst */
+  transform: scale(0.8);
   padding-bottom: 80rem;
   padding-left: 20rem;
 }
@@ -33,7 +32,7 @@
 }
 
 .instagram img {
-  max-width: 100%; /* Juster dette for at ændre størrelsen af det tredje billede */
+  max-width: 100%;
 }
 
 .tekst1 {
@@ -77,7 +76,7 @@
   height: auto;
 }
 
-/* insta plugin */
+/* insta plugin 
 
 .instagram-feed {
   display: flex;
@@ -125,6 +124,7 @@
   font-size: 12px;
   color: #888;
 }
+*/
 
 #popImage,
 #popImage2 {
@@ -141,25 +141,25 @@
 }
 
 .pop-animation {
-  animation: fadeIn 0.5s ease-in-out; /* Brug fadeIn-animationen for at få billedet til at fade ind */
+  animation: fadeIn 0.5s ease-in-out; /* får billedet til at fade ind */
 }
 
 /* SIDEN I COMPUTER VIEW */
 @media (min-width: 800px) {
   .overlappende_billeder img {
     max-width: 45%;
-    margin: 0 0 30px 30px; /* Lige stor margin på toppen, bunden, højre og venstre */
+    margin: 0 0 30px 30px; /* gør at der er lige stor margin på toppen, bunden, højre og venstre */
   }
 
   .overlappende_billeder img:first-child {
     position: relative;
-    z-index: 1; /* Sørger for, at dette billede er øverst */
+    z-index: 1;
   }
 
   .overlappende_billeder img:last-child {
     position: absolute;
-    right: 243px; /* Juster dette for at ændre afstanden fra højre */
-    top: 213px; /* Juster dette for at ændre afstanden fra toppen */
+    right: 243px;
+    top: 213px;
     z-index: 3;
     transform: scale(0.9);
   }
@@ -171,8 +171,8 @@
   .tekst2 {
     font-family: "p";
     position: absolute;
-    top: 460px; /* Juster dette for at ændre afstanden fra toppen */
-    left: 680px; /* Juster dette for at ændre den vandrette placering */
+    top: 460px;
+    left: 829px;
     font-size: 17px;
     right: 100px;
   }
