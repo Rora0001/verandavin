@@ -110,6 +110,10 @@ nav {
   text-align: end;
 }
 
+.menu a:hover {
+  text-decoration: underline; /* Tilføj understregningen ved hover */
+}
+
 /* .menu a:hover {
   color: #221a13;
 } */
