@@ -23,21 +23,21 @@
 }
 
 .overlappende_billeder img {
-  max-width: 60%; /* Sørg for, at billedet ikke overstiger containerens bredde */
+  max-width: 60%;
   margin-left: 2rem;
 }
 
 .overlappende_billeder img:first-child {
   position: relative;
-  z-index: 1; /* Sørger for, at dette billede er øverst */
+  z-index: 1;
 }
 
 .overlappende_billeder img:last-child {
   position: absolute;
-  /* Juster dette for at ændre den vertikale placering */
-  right: -70px; /* Juster dette for at ændre den horisontale placering */
-  z-index: 3; /* Sørger for, at dette billede er mere indenover det første */
-  transform: scale(0.8); /* Juster dette for at ændre skaleringen af det andet billede */
+
+  right: -70px;
+  z-index: 3;
+  transform: scale(0.8);
   padding-bottom: 75rem;
   padding-left: 20rem;
 }
@@ -48,14 +48,13 @@
 }
 
 .billede img {
-  max-width: 70%; /* Juster dette for at ændre størrelsen af det tredje billede */
+  max-width: 70%;
 }
 
 .overlappende_billeder2 .billede3 {
   height: 100%;
 }
 
-/* Paste the CSS styles here */
 .overlappende_billeder2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -103,7 +102,7 @@ p {
 
 #popImage,
 #popImage2 {
-  opacity: 0; /* Billede starter usynligt */
+  opacity: 0;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
@@ -117,14 +116,14 @@ p {
 }
 
 .pop-animation {
-  animation: fadeIn 0.5s ease-in-out; /* Brug fadeIn-animationen for at få billedet til at fade ind */
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .video-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1 0 33.33%; /* Fylder 1/3 af bredden */
+  flex: 1 0 33.33%;
   position: relative;
 }
 
