@@ -28,15 +28,12 @@
   padding-left: 20rem;
 }
 
-.billede_grid img {
-  max-width: 60%;
-}
 .instagram {
   text-align: center;
 }
 
 .instagram img {
-  max-width: 90%; /* Juster dette for at ændre størrelsen af det tredje billede */
+  max-width: 100%; /* Juster dette for at ændre størrelsen af det tredje billede */
 }
 
 .tekst1 {
@@ -49,19 +46,35 @@
   margin: 20px;
   padding-top: 7rem;
   font-family: "p";
-  padding-bottom: 1rem;
 }
 
 .tekst3 {
   margin: 20px;
-  padding-top: 15rem;
+  padding-top: 1rem;
   font-family: "p";
 }
 
 .tekst4 {
   margin: 20px;
-  padding-top: 1rem;
   font-family: "p";
+}
+
+.billede_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.billede_grid {
+  gap: 2rem;
+  max-width: 80%;
+  align-items: center;
+}
+
+.billede_grid img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* insta plugin */
@@ -71,7 +84,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 6px;
 }
 
 .instagram-post {
@@ -168,6 +181,7 @@
     text-align: center;
     font-size: larger;
     padding-bottom: 1rem;
+    padding-top: 17rem;
   }
 
   .billede_container {
