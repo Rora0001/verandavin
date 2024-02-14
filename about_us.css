@@ -118,18 +118,3 @@ p {
 .pop-animation {
   animation: fadeIn 0.5s ease-in-out;
 }
-
-.video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1 0 33.33%;
-  position: relative;
-}
-
-.video-container iframe {
-  top: 0;
-  left: 0;
-  width: 600px;
-  aspect-ratio: 1/1;
-}
