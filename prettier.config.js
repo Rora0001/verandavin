@@ -9,3 +9,15 @@ module.exports = {
     showBracketsInRuler: true,
   },
 }
+module.exports = {
+  overrides: [
+    {
+      files: '*.html',
+      options: {
+        ...
+        // Add the rule you want to disable
+        htmlVoidTags: false,
+      },
+    },
+  ],
+};
