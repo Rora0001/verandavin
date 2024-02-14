@@ -15,12 +15,10 @@ body {
   margin: 1cm;
   border: 2px solid #283274;
   box-sizing: border-box;
-  background-color: #f9f2f2;
+  background-color: #d2dedc;
   padding: 1cm;
 }
-header {
-  background-color: #f9f2f2;
-}
+
 /*fonte*/
 h1 {
   font-family: "Apoc";
