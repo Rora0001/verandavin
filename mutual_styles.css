@@ -90,7 +90,10 @@ nav {
   padding: 0;
   justify-content: space-between;
   position: absolute;
-  left: 61%;
+  left: 50%;
+  top: 22%;
+  transform: translate(-50%, -50%);
+  background-color: #f8d2ca;
 }
 
 /* .menu li {
